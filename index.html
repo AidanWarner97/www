@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Aidan Warner</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Offset scroll position to account for sticky header */
+        #welcome, #about, #experience, #education, #portfolio, #contact {
+            scroll-margin-top: 100px;
+        }
+        
+        /* Mobile menu styles */
+        .mobile-menu {
+            max-height: 0;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body class="bg-[#1e1e2e] text-white">
+    
+    <!-- Header -->
+    <div class="sticky top-0 z-50 bg-[#45475a] shadow-lg border-b border-[#6c7086] relative">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl lg:text-3xl font-bold text-white">
+                    Aidan Warner
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex justify-center flex-wrap items-center">
+                    <a href="#welcome" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Welcome</a>
+                    <a href="#about" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">About</a>
+                    <a href="#experience" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Experience</a>
+                    <a href="#education" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Education</a>
+                    <a href="#portfolio" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Portfolio</a>
+                    <a href="#contact" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Contact</a>
+                </div>
+                
+                <!-- Mobile Burger Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-[#89b4fa] focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="mobile-menu lg:hidden bg-[#45475a] border-t border-[#6c7086] overflow-hidden">
+                <div class="px-4 py-4">
+                    <div class="flex flex-col space-y-2">
+                        <a href="#welcome" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Welcome</a>
+                        <a href="#about" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">About</a>
+                        <a href="#experience" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Experience</a>
+                        <a href="#education" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Education</a>
+                        <a href="#portfolio" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Portfolio</a>
+                        <a href="#contact" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content - Welcome -->
+    <div id="welcome" class="container mx-auto px-4">
+        <div class="mx-auto bg-[#45475a] rounded-lg shadow-md p-8 mt-8 text-white">
+            <h2 class="text-2xl font-bold mb-4">Welcome to my online resumé</h2>
+            <p class="mb-4">Here you can find information about my current and past work experience, education, and projects.</p>
+            <p class="mb-4">Feel free to explore my work and get in touch!</p>
+        </div>
+    </div>
+
+    <!-- Main Content - About -->
+    <div id="about" class="container mx-auto px-4">
+        <div class="mx-auto bg-[#45475a] rounded-lg shadow-md p-8 mt-8 text-white">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="mb-4">I am a passionate web developer with experience in building dynamic and responsive websites. I have a strong background in both front-end and back-end development, and I enjoy creating user-friendly interfaces that enhance the overall user experience.</p>
+            <p class="mb-4">My skills include HTML, CSS, JavaScript, and various frameworks. I am always eager to learn new technologies and improve my skills to deliver the best possible solutions for my clients.</p>
+            <p class="mb-4">In my free time, I enjoy contributing to open-source projects, exploring new technologies, and staying updated with the latest trends in web development. I believe in continuous learning and strive to improve my skills to create better user experiences.</p>
+            <p class="mb-4">I am currently working as a Senior Sales Consultant at Easy Bathrooms, where I provide expert advice on bathroom products and design. I also manage customer relationships to ensure satisfaction and repeat business. Additionally, I am involved in automation management and infrastructure engineering at Evolution X, where I develop and maintain automation scripts for infrastructure management.</p>
+            <p class="mb-4">I am always open to new opportunities and collaborations, so feel free to reach out if you would like to connect or discuss potential projects.</p>
+            <p class="mb-4">Thank you for visiting my online resumé, and I hope you find the information helpful!</p>
+        </div>
+    </div>
+
+    <!-- Main Content - Experience -->
+    <div id="experience" class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
+            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
+                <p class="lg:-rotate-90 whitespace-nowrap">Experience</p>
+            </h2>
+            <div class="lg:col-span-9 lg:col-start-2">
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2023 - Current</p>
+                    <p>Senior Sales Consultant</p>
+                    <p>Easy Bathrooms</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided expert advice on bathroom products and design</li>
+                        <li>Assisted customers in selecting the right products for their needs</li>
+                        <li>Maintained up-to-date knowledge of industry trends and competitors</li>
+                        <li>Managed customer relationships to ensure satisfaction and repeat business</li>
+                        <li>Trained new staff on product knowledge and sales techniques</li>
+                        <li>Achieved sales targets and contributed to store performance</li>
+                        <li>Planned and designed customer bathroom layouts using CAD software</li>
+                        <li>Maintained CAD libraries for company-wide use</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2024 - Current</p>
+                    <p>Automation Manager &amp; Infrastructure Engineer</p>
+                    <p>Evolution X</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Developed and maintained automation scripts for infrastructure management</li>
+                        <li>Implemented CI/CD pipelines to streamline deployment processes</li>
+                        <li>Collaborated with development teams to ensure smooth integration of new features</li>
+                        <li>Monitored system performance and implemented optimizations</li>
+                        <li>Provided technical support and troubleshooting for infrastructure issues</li>
+                        <li>Developed and maintained a content delivery network (CDN) for improved release performance</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2022 - 2023</p>
+                    <p>Sales Consultant</p>
+                    <p>Carpetright</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Assisted customers in selecting flooring products</li>
+                        <li>Provided product knowledge and recommendations</li>
+                        <li>Maintained a clean and organized sales floor</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2020 - 2022</p>
+                    <p>IT Helpdesk Assistant</p>
+                    <p>Mole Valley Farmers</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided technical support for hardware and software issues</li>
+                        <li>Assisted with the setup and configuration of IT equipment</li>
+                        <li>Maintained documentation for IT processes and procedures</li>
+                        <li>Monitored and responded to support tickets in a timely manner</li>
+                        <li>Collaborated with team members to resolve complex technical issues</li>
+                        <li>Trained staff on basic IT troubleshooting techniques</li>
+                        <li>Assisted in the implementation of new IT systems and software</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2019 - 2020</p>
+                    <p>Team Member</p>
+                    <p>Greggs</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided excellent customer service in a fast-paced environment</li>
+                        <li>Assisted with food preparation and presentation</li>
+                        <li>Maintained cleanliness and organization of the store</li>
+                        <li>Handled cash transactions and operated the till</li>
+                        <li>Collaborated with team members to ensure smooth operations</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2018 - 2019</p>
+                    <p>Guru</p>
+                    <p>O2</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided expert advice on mobile devices and accessories</li>
+                        <li>Assisted customers with technical issues and inquiries</li>
+                        <li>Maintained up-to-date knowledge of product offerings</li>
+                        <li>Provided training and support to team members</li>
+                        <li>Expanded customer base through outreach and engagement</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2016-2018</p>
+                    <p>Knowhow Technician</p>
+                    <p>Currys PC World</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided technical support for customers in-store</li>
+                        <li>Assisted with the setup and configuration of devices</li>
+                        <li>Maintained a high level of product knowledge</li>
+                        <li>Trained staff on new technologies and products</li>
+                        <li>Collaborated with team members to improve customer experience</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2015</p>
+                    <p>Sales Consultant</p>
+                    <p>Samsung Mobile</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Provided expert advice on Samsung mobile devices</li>
+                        <li>Assisted customers with product selection and inquiries</li>
+                        <li>Maintained up-to-date knowledge of Samsung products</li>
+                        <li>Trained new staff on product features and sales techniques</li>
+                        <li>Achieved sales targets and contributed to store performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content - Education -->
+    <div id="education" class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
+            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
+                <p class="lg:-rotate-90 whitespace-nowrap">Education</p>
+            </h2>
+            <div class="lg:col-span-9 lg:col-start-2">
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2019</p>
+                    <p>Customer Service Level 2</p>
+                    <p>PETROC</p>
+                    <p class="font-bold"></p>
+                    <ul class="list-disc list-inside">
+                        <li>Developed skills in customer service and communication</li>
+                        <li>Learned to handle customer inquiries and complaints effectively</li>
+                        <li>Gained knowledge of customer service best practices</li>
+                        <li>Participated in role-playing exercises to enhance customer interaction skills</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2009-2015</p>
+                    <p>General Studies</p>
+                    <p>Bideford College</p>
+                    <p class="font-bold"></p>
+                    <ul class="list-disc list-inside">
+                        <li>Studied a broad range of subjects including mathematics, science, and English</li>
+                        <li>Developed critical thinking and analytical skills</li>
+                        <li>Participated in group projects and presentations</li>
+                        <li>Gained a solid foundation for further education and career development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content - Portfolio -->
+    <div id="portfolio" class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
+            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
+                <p class="lg:-rotate-90 whitespace-nowrap">Portfolio</p>
+            </h2>
+            <div class="lg:col-span-9 lg:col-start-2">
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <img src="img/evolution-x-cdn-screenshot.jpg" alt="Project Thumbnail" class="w-full lg:w-[200px] h-[200px] object-cover rounded flex-shrink-0">
+                        <div class="flex-1">
+                            <p class="font-bold italic">Release: 2025</p>
+                            <p><a href="https://cdn.evolution-x.org" target="_blank" class="underline">Evolution X CDN</a></p>
+                            <p class="font-bold">Features:</p>
+                            <ul class="list-disc list-inside">
+                                <li>High-speed content delivery</li>
+                                <li>Global server network</li>
+                                <li>Easy management of user permissions</li>
+                                <li>Can be easily adapted to various storage solutions</li>
+                                <li>Includes custom authentication server and SSH server</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <img src="img/safetynetsw-screenshot.jpg" alt="Project Thumbnail" class="w-full lg:w-[200px] h-[200px] object-cover rounded flex-shrink-0">
+                        <div class="flex-1">
+                            <p class="font-bold italic">Release: 2025</p>
+                            <p><a href="https://safetynetsw.org" target="_blank" class="underline">Safetynet SW</a></p>
+                            <p class="font-bold">Features:</p>
+                            <ul class="list-disc list-inside">
+                                <li>Website for local area road safety information</li>
+                                <li>Provides option for local people to get involved</li>
+                                <li>Provides information regarding the importance of road safety</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <img src="img/tileimagegen-screenshot.jpg" alt="Project Thumbnail" class="w-full lg:w-[200px] h-[200px] object-cover rounded flex-shrink-0">
+                        <div class="flex-1">
+                            <p class="font-bold italic">Release: 2024</p>
+                            <p><a href="https://tileimagegen.uk" target="_blank" class="underline">Tile Image Generator</a></p>
+                            <p class="font-bold">Features:</p>
+                            <ul class="list-disc list-inside">
+                                <li>Generates unique tile images for various applications</li>
+                                <li>Supports multiple image formats and resolutions</li>
+                                <li>Highly customizable output options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content - Contact -->
+    <div id="contact" class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
+            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
+                <p class="lg:-rotate-90 whitespace-nowrap">Contact</p>
+            </h2>
+            <div class="lg:col-span-9 lg:col-start-2">
+                <!-- Contact Information & Social Links -->
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <h3 class="text-xl font-bold mb-4">Get in touch</h3>
+                    <p class="mb-6">Feel free to reach out via email or connect with me on social media.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-[#89b4fa] rounded-full flex items-center justify-center">
+                                <span class="text-[#1e1e2e] font-bold text-sm">@</span>
+                            </div>
+                            <a href="mailto:aidan@awarner.co.uk" class="hover:text-[#89b4fa] transition-colors">
+                                aidan@awarner.co.uk
+                            </a>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-[#0077b5] rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold text-sm">in</span>
+                            </div>
+                            <a href="https://www.linkedin.com/in/aidan-warner-b1a887149/" target="_blank" class="hover:text-[#0077b5] transition-colors">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-[#333] rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold text-sm">gh</span>
+                            </div>
+                            <a href="https://github.com/aidanwarner97" target="_blank" class="hover:text-[#89b4fa] transition-colors">
+                                GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-[#6c7086]">
+                        <p class="text-sm text-[#a6adc8]">
+                            I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#45475a] text-white py-4 mt-8">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-sm">
+                &copy; <span id="current-year"></span> Aidan Warner. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-update the year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+            
+            console.log('Mobile menu elements found:', {
+                button: !!mobileMenuButton,
+                menu: !!mobileMenu,
+                links: mobileMenuLinks.length
+            });
+            
+            // Toggle mobile menu
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Menu button clicked');
+                    mobileMenu.classList.toggle('open');
+                    console.log('Menu is now:', mobileMenu.classList.contains('open') ? 'open' : 'closed');
+                });
+            }
+            
+            // Close mobile menu when a link is clicked
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Menu link clicked');
+                    mobileMenu.classList.remove('open');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu || !mobileMenuButton) return;
+                
+                const isClickInsideMenu = mobileMenu.contains(event.target);
+                const isClickOnButton = mobileMenuButton.contains(event.target);
+                
+                if (!isClickInsideMenu && !isClickOnButton && mobileMenu.classList.contains('open')) {
+                    console.log('Clicking outside, closing menu');
+                    mobileMenu.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
