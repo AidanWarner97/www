@@ -23,7 +23,7 @@
         }
         
         /* Offset scroll position to account for sticky header */
-        #welcome, #about, #experience, #education, #portfolio, #contact {
+        #about, #experience, #education, #portfolio, #contact {
             scroll-margin-top: 100px;
         }
         
@@ -40,26 +40,27 @@
 </head>
 <body class="bg-[#1e1e2e] text-white">
     
-    <!-- Header -->
+    <!-- Header - CV Style -->
+    <div class="bg-[#45475a] text-white py-8 px-4 text-center border-b-4 border-[#89b4fa]">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-2">AIDAN WARNER</h1>
+        <p class="text-sm lg:text-base">aidan@awarner.co.uk | 07463950334 | Bideford</p>
+    </div>
+
+    <!-- Navigation Bar -->
     <div class="sticky top-0 z-50 bg-[#45475a] shadow-lg border-b border-[#6c7086] relative">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl lg:text-3xl font-bold text-white">
-                    Aidan Warner
-                </div>
-                
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex justify-center flex-wrap items-center">
-                    <a href="#welcome" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Welcome</a>
+                <div class="hidden lg:flex justify-center flex-wrap items-center w-full">
                     <a href="#about" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">About</a>
-                    <a href="#experience" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Experience</a>
+                    <a href="#experience" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Work History</a>
                     <a href="#education" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Education</a>
                     <a href="#portfolio" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Portfolio</a>
                     <a href="#contact" class="p-2 m-1 text-sm border-2 border-[#6c7086] rounded hover:bg-[#6c7086] transition-colors cursor-pointer text-white no-underline">Contact</a>
                 </div>
                 
                 <!-- Mobile Burger Button -->
-                <div class="lg:hidden flex items-center">
+                <div class="lg:hidden flex items-center w-full justify-end">
                     <button id="mobile-menu-button" class="text-white hover:text-[#89b4fa] focus:outline-none p-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -72,9 +73,8 @@
             <div id="mobile-menu" class="mobile-menu lg:hidden bg-[#45475a] border-t border-[#6c7086] overflow-hidden">
                 <div class="px-4 py-4">
                     <div class="flex flex-col space-y-2">
-                        <a href="#welcome" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Welcome</a>
                         <a href="#about" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">About</a>
-                        <a href="#experience" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Experience</a>
+                        <a href="#experience" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Work History</a>
                         <a href="#education" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Education</a>
                         <a href="#portfolio" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Portfolio</a>
                         <a href="#contact" class="mobile-menu-link block p-3 text-white hover:bg-[#6c7086] rounded transition-colors">Contact</a>
@@ -84,35 +84,35 @@
         </div>
     </div>
 
-    <!-- Main Content - Welcome -->
-    <div id="welcome" class="container mx-auto px-4">
-        <div class="mx-auto bg-[#45475a] rounded-lg shadow-md p-8 mt-8 text-white">
-            <h2 class="text-2xl font-bold mb-4">Welcome to my online resumé</h2>
-            <p class="mb-4">Here you can find information about my current and past work experience, education, and projects.</p>
-            <p class="mb-4">Feel free to explore my work and get in touch!</p>
-        </div>
-    </div>
-
     <!-- Main Content - About -->
     <div id="about" class="container mx-auto px-4">
-        <div class="mx-auto bg-[#45475a] rounded-lg shadow-md p-8 mt-8 text-white">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p class="mb-4">I am a passionate web developer with experience in building dynamic and responsive websites. I have a strong background in both front-end and back-end development, and I enjoy creating user-friendly interfaces that enhance the overall user experience.</p>
-            <p class="mb-4">My skills include HTML, CSS, JavaScript, and various frameworks. I am always eager to learn new technologies and improve my skills to deliver the best possible solutions for my clients.</p>
-            <p class="mb-4">In my free time, I enjoy contributing to open-source projects, exploring new technologies, and staying updated with the latest trends in web development. I believe in continuous learning and strive to improve my skills to create better user experiences.</p>
-            <p class="mb-4">I am currently working as a Senior Sales Consultant at Easy Bathrooms, where I provide expert advice on bathroom products and design. I also manage customer relationships to ensure satisfaction and repeat business. Additionally, I am involved in automation management and infrastructure engineering at Evolution X, where I develop and maintain automation scripts for infrastructure management.</p>
-            <p class="mb-4">I am always open to new opportunities and collaborations, so feel free to reach out if you would like to connect or discuss potential projects.</p>
-            <p class="mb-4">Thank you for visiting my online resumé, and I hope you find the information helpful!</p>
+        <div class="flex flex-col lg:flex-row gap-8 mx-auto mt-8 text-white">
+            <div class="lg:w-3/12 flex items-start sticky top-24 h-fit z-20 bg-[#1e1e2e]">
+                <div class="border-2 border-[#6c7086] p-4 w-full text-center">
+                    <h2 class="text-2xl font-bold">PROFESSIONAL SUMMARY</h2>
+                </div>
+            </div>
+            <div class="w-full flex-1 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                <p class="mb-4">Sales professional with history of delivering results through strategic sales initiatives and client relationship management. Known for fostering team collaboration and adapting to dynamic market conditions. Expertise in negotiation and CRM tools, combined with proactive and reliable approach.</p>
+                <p class="mb-4">I am a passionate web developer with experience in building dynamic and responsive websites. I have a strong background in both front-end and back-end development, and I enjoy creating user-friendly interfaces that enhance the overall user experience.</p>
+                <p class="mb-4">My skills include HTML, CSS, JavaScript, and various frameworks. I am always eager to learn new technologies and improve my skills to deliver the best possible solutions for my clients.</p>
+                <p class="mb-4">In my free time, I enjoy contributing to open-source projects, exploring new technologies, and staying updated with the latest trends in web development. I believe in continuous learning and strive to improve my skills to create better user experiences.</p>
+                <p class="mb-4">I am currently working as a Service Specialist at Topps Tiles, where I focus on delivering exceptional customer service and maintaining store operations.</p>
+                <p class="mb-4">I am also involved in automation management and infrastructure engineering at Evolution X, where I develop and maintain automation scripts for infrastructure management.</p>
+                <p class="mb-4">I am always open to new opportunities and collaborations, so feel free to reach out if you would like to connect or discuss potential projects.</p>
+            </div>
         </div>
     </div>
 
     <!-- Main Content - Experience -->
     <div id="experience" class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
-            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
-                <p class="lg:-rotate-90 whitespace-nowrap">Experience</p>
-            </h2>
-            <div class="lg:col-span-9 lg:col-start-2">
+        <div class="flex flex-col lg:flex-row gap-8 mx-auto mt-8 text-white">
+            <div class="lg:w-3/12 flex items-start sticky top-24 h-fit z-20 bg-[#1e1e2e]">
+                <div class="border-2 border-[#6c7086] p-4 w-full text-center">
+                    <h2 class="text-2xl font-bold">WORK HISTORY</h2>
+                </div>
+            </div>
+            <div class="lg:w-7/12 flex-1">
                 <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
                     <p class="font-bold italic">2026 - Current</p>
                     <p>Service Specialist</p>
@@ -130,6 +130,20 @@
                     </ul>
                 </div>
                 <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+                    <p class="font-bold italic">2024 - Current</p>
+                    <p>Automation Manager &amp; Infrastructure Engineer</p>
+                    <p>Evolution X</p>
+                    <p class="font-bold">Key Responsibilities:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Developed and maintained automation scripts for infrastructure management</li>
+                        <li>Implemented CI/CD pipelines to streamline deployment processes</li>
+                        <li>Collaborated with development teams to ensure smooth integration of new features</li>
+                        <li>Monitored system performance and implemented optimizations</li>
+                        <li>Provided technical support and troubleshooting for infrastructure issues</li>
+                        <li>Developed and maintained a content delivery network (CDN) for improved release performance</li>
+                    </ul>
+                </div>
+                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
                     <p class="font-bold italic">2023 - 2026</p>
                     <p>Senior Sales Consultant</p>
                     <p>Easy Bathrooms</p>
@@ -143,20 +157,6 @@
                         <li>Achieved sales targets and contributed to store performance</li>
                         <li>Planned and designed customer bathroom layouts using CAD software</li>
                         <li>Maintained CAD libraries for company-wide use</li>
-                    </ul>
-                </div>
-                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
-                    <p class="font-bold italic">2024 - Current</p>
-                    <p>Automation Manager &amp; Infrastructure Engineer</p>
-                    <p>Evolution X</p>
-                    <p class="font-bold">Key Responsibilities:</p>
-                    <ul class="list-disc list-inside">
-                        <li>Developed and maintained automation scripts for infrastructure management</li>
-                        <li>Implemented CI/CD pipelines to streamline deployment processes</li>
-                        <li>Collaborated with development teams to ensure smooth integration of new features</li>
-                        <li>Monitored system performance and implemented optimizations</li>
-                        <li>Provided technical support and troubleshooting for infrastructure issues</li>
-                        <li>Developed and maintained a content delivery network (CDN) for improved release performance</li>
                     </ul>
                 </div>
                 <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
@@ -240,14 +240,14 @@
             </div>
         </div>
     </div>
-
-    <!-- Main Content - Education -->
     <div id="education" class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
-            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
-                <p class="lg:-rotate-90 whitespace-nowrap">Education</p>
-            </h2>
-            <div class="lg:col-span-9 lg:col-start-2">
+        <div class="flex flex-col lg:flex-row gap-8 mx-auto mt-8 text-white">
+            <div class="lg:w-3/12 flex items-start sticky top-24 h-fit z-20 bg-[#1e1e2e]">
+                <div class="border-2 border-[#6c7086] p-4 w-full text-center">
+                    <h2 class="text-2xl font-bold">EDUCATION</h2>
+                </div>
+            </div>
+            <div class="lg:w-7/12 flex-1">
                 <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
                     <p class="font-bold italic">2019</p>
                     <p>Customer Service Level 2</p>
@@ -278,11 +278,13 @@
 
     <!-- Main Content - Portfolio -->
     <div id="portfolio" class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
-            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
-                <p class="lg:-rotate-90 whitespace-nowrap">Portfolio</p>
-            </h2>
-            <div class="lg:col-span-9 lg:col-start-2">
+        <div class="flex flex-col lg:flex-row gap-8 mx-auto mt-8 text-white">
+            <div class="lg:w-3/12 flex items-start sticky top-24 h-fit z-20 bg-[#1e1e2e]">
+                <div class="border-2 border-[#6c7086] p-4 w-full text-center">
+                    <h2 class="text-2xl font-bold">PORTFOLIO</h2>
+                </div>
+            </div>
+            <div class="lg:w-7/12 flex-1">
                 <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
                     <div class="flex flex-col lg:flex-row gap-4">
                         <img src="img/evolution-x-cdn-screenshot.jpg" alt="Project Thumbnail" class="w-full lg:w-[200px] h-[200px] object-cover rounded flex-shrink-0">
@@ -346,13 +348,13 @@
 
     <!-- Main Content - Contact -->
     <div id="contact" class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-10 grid-rows-1 gap-4 mx-auto rounded-lg shadow-md mt-8 text-white">
-            <h2 class="lg:col-span-1 text-2xl font-bold mb-4 bg-[#45475a] rounded-lg shadow-md p-4 lg:p-10 text-white flex items-center justify-center">
-                <p class="lg:-rotate-90 whitespace-nowrap">Contact</p>
-            </h2>
-            <div class="lg:col-span-9 lg:col-start-2">
-                <!-- Contact Information & Social Links -->
-                <div class="mb-4 bg-[#45475a] rounded-lg shadow-md p-8 text-white">
+        <div class="flex flex-col lg:flex-row gap-8 mx-auto mt-8 text-white">
+            <div class="lg:w-3/12 flex items-start sticky top-24 h-fit z-20 bg-[#1e1e2e]">
+                <div class="border-2 border-[#6c7086] p-4 w-full text-center">
+                    <h2 class="text-2xl font-bold">CONTACT</h2>
+                </div>
+            </div>
+            <div class="lg:w-7/12 flex-1">
                     <h3 class="text-xl font-bold mb-4">Get in touch</h3>
                     <p class="mb-6">Feel free to reach out via email or connect with me on social media.</p>
                     
